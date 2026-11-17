@@ -1,0 +1,31 @@
+// src/scss/pages/_home.scss
+// Estilos exclusivos de la página de inicio.
+
+@use "../abstracts/variables" as *;
+
+.home {
+  padding-block: $space-lg;
+
+  &__card {
+    padding: $space-md;
+    border: 1px solid $border;
+    border-radius: $radius;
+    background: $bg;
+    box-shadow: $shadow-sm;
+
+    h2 {
+      margin-bottom: $space-sm;
+      font-size: 1.125rem;
+    }
+
+    p {
+      color: $text-muted;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    gap: $space-sm;
+    margin-top: $space-md;
+  }
+}

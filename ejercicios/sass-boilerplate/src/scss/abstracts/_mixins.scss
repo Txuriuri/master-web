@@ -1,0 +1,33 @@
+// src/scss/abstracts/_mixins.scss
+// Bloques reutilizables. Se usan con @include.
+
+@use "sass:map";
+@use "variables" as v;
+
+// Media query mobile-first por nombre: @include mq("md") { ... }
+@mixin mq($name) {
+  $bp: map.get(v.$breakpoints, $name);
+
+  @if $bp {
+    @media (min-width: $bp) {
+      @content;
+    }
+  } @else {
+    @error "Breakpoint desconocido: #{$name}";
+  }
+}
+
+// Centrado con flexbox
+@mixin flex-center($direction: row) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: center;
+  justify-content: center;
+}
+
+// Texto truncado a una línea
+@mixin truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

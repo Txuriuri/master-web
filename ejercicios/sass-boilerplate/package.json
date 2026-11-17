@@ -1,0 +1,19 @@
+{
+  "name": "sass-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    
+    "sass": "sass src/scss/main.scss dist/css/main.css",
+    "watch": "sass --watch src/scss:dist/css",
+    "build": "sass src/scss/main.scss dist/css/main.css --style=compressed --no-source-map"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "sass": "^1.108.2"
+  }
+}

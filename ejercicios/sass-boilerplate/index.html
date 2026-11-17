@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boilerplate Sass</title>
+  <link rel="stylesheet" href="dist/css/main.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__inner">
+      <span class="header__title">Mi proyecto</span>
+      <button class="btn btn--ghost">Menú</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="home">
+      <h1>Boilerplate de Sass</h1>
+      <p>Edita los archivos de <code>src/scss/</code> y guarda: se recompila solo.</p>
+
+      <div class="grid" style="margin-top: 2rem;">
+        <article class="home__card">
+          <h2>abstracts/</h2>
+          <p>Variables, mixins y funciones. No generan CSS.</p>
+        </article>
+        <article class="home__card">
+          <h2>base/</h2>
+          <p>Reset y tipografía global.</p>
+        </article>
+        <article class="home__card">
+          <h2>components/</h2>
+          <p>Botones, tarjetas, formularios.</p>
+        </article>
+      </div>
+
+      <div class="home__actions" style="margin-top: 2rem;">
+        <button class="btn">Botón normal</button>
+        <button class="btn btn--ghost">Botón ghost</button>
+        <button class="btn" disabled>Deshabilitado</button>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

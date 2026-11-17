@@ -1,0 +1,37 @@
+// src/scss/components/_buttons.scss
+// Componente con modificadores (BEM).
+
+@use "../abstracts/variables" as *;
+
+.btn {
+  padding: $space-sm $space-md;
+  border: 0;
+  border-radius: $radius;
+  font: inherit;
+  cursor: pointer;
+  background: $primary;
+  color: #fff;
+  transition: background 0.2s ease;
+
+  &:hover,
+  &:focus-visible {
+    background: $primary-dark;
+  }
+
+  // Modificador: .btn--ghost
+  &--ghost {
+    background: transparent;
+    color: $primary;
+    box-shadow: inset 0 0 0 2px currentColor;
+
+    &:hover,
+    &:focus-visible {
+      background: $gray-100;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
