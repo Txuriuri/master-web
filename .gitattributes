@@ -1,0 +1,16 @@
+# Normaliza saltos de línea a LF: evita que Git vea cambios falsos
+# al pasar archivos entre Windows y Linux/macOS.
+* text=auto eol=lf
+
+# Binarios: sin conversión ni diff de texto
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.pdf binary
+*.zip binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
