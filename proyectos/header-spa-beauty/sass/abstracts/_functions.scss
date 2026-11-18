@@ -1,1 +1,6 @@
 ﻿// Funciones personalizadas
+@use "sass:math";
+
+@function pct($valor, $base) {
+  @return math.div($valor, $base) * 100%;
+}

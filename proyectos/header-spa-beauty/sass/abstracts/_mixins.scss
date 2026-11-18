@@ -8,6 +8,12 @@
   
 }
 
+@mixin hasta($bp) {
+  @media (max-width: $bp) {
+    @content;
+  }
+}
+
 @mixin button() {
   display: inline-block;
   background-color: $dark-blue;

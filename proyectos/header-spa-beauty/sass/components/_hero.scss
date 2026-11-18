@@ -10,6 +10,8 @@
 
   &__content {
     flex: 0 0 48%;
+    position: relative;
+    z-index: 1;
     h1 {
       font-size: 64px;
       line-height: 80px;
@@ -28,12 +30,20 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 1559px;
+    width: pct(1559px, 1920px);
     z-index: 0;
     >  img {
          display: block;
           width: 100%;
           height: auto;
+        }
+        > .hero__part2 {
+          position: absolute;
+          top: pct(53px, 1080px);
+          right: pct(192px, 1559px);
+          width: pct(560px, 1559px);
+          height: auto;
+          z-index: -1;
         }
      
   }
@@ -41,8 +51,8 @@
           position: absolute;
           top: 0;
           right: 0;
-          width: 635px;
-          height: 820px;
+          width: pct(635px, 1559px);
+          height: pct(820px, 1080px);
           z-index: -1;
           background-color: $mint;
         }
@@ -51,12 +61,93 @@
           display: flex;
           align-items: center;
           gap: 49px;
-          margin-top: 62px;
+          margin-top: 56px;
+          margin-bottom: 91px;
 
           .button {
-            padding: 16px 48px;
+            padding: 18px 46px;
             font-size: 18px;
+            line-height: 24px;
           }
+        }
+        &__info {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          justify-items: center;
+          max-width: 642px;
+          padding: 32px 0;
+          background: rgba(255, 255, 255, 0.7);
+          border-radius: 16px;
+         
+
+          .icon__img {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+          }
+          h3 {
+            color: $dark-blue;
+            font-size: 36px;
+            font-family: $main-font;
+            font-weight: 500;
+            margin: 34px 0 0;
+            line-height: 1;
+            
+          }
+
+          p {
+            color: #909090;
+            font-size: 18px;
+            line-height: 27px;
+            margin: 24px 0 0;
+          }
+
+
+        }
+        .description1, .description2 {
+          position: absolute;
+          width: pct(405px, 1559px);
+          padding: 24px;
+          background: rgba(255, 255, 255, 0.5);
+          border-radius: 12px;
+
+          .comillas {
+            position: absolute;
+            top: 19px;
+            left: 20px;
+            font-family: $main-font;
+            font-size: 96px;
+            font-weight: 700;
+            line-height: 1;
+            color: $dark-blue;
+            
+          }
+          p {
+            margin: 28px 0 0;
+            font-size: 18px;
+            line-height: 27px;
+            color: #070D15;
+
+          }
+
+          h4 {
+            margin: 8px 0 0;
+            font-family: $main-font;
+            font-size: 18px;
+            font-weight: 600;
+            color: $dark-blue;
+          }
+        }
+
+        .description1 {
+          top: pct(436px, 1080px);
+          left: pct(1088px, 1559px);
+        }
+
+        .description2 {
+          top: pct(746px, 1080px);
+          left: pct(949px, 1559px);
         }
 
   
