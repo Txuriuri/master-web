@@ -1,0 +1,24 @@
+﻿// Botones
+.button {
+  @include button();
+}
+
+.btn-video {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: $dark-blue;
+  text-decoration: none;
+  font-weight: 18px;
+  font-weight: 500;
+
+  &__play {
+    width: 48px;
+    height: 48px;
+    padding: 12px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  }
+
+}

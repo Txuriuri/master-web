@@ -1,0 +1,65 @@
+
+
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  padding-top: 109px;
+
+  &__content {
+    flex: 0 0 48%;
+    h1 {
+      font-size: 64px;
+      line-height: 80px;
+      font-family: $main-font;
+      color: $dark-blue;
+    }
+    > p {
+      font-size: 24px;
+      line-height: 40px;
+      color: $grey;
+      margin-top: 32px;
+
+    }
+  }
+  &__img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1559px;
+    z-index: 0;
+    >  img {
+         display: block;
+          width: 100%;
+          height: auto;
+        }
+     
+  }
+     &__part1 {
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 635px;
+          height: 820px;
+          z-index: -1;
+          background-color: $mint;
+        }
+
+        &__buttons {
+          display: flex;
+          align-items: center;
+          gap: 49px;
+          margin-top: 62px;
+
+          .button {
+            padding: 16px 48px;
+            font-size: 18px;
+          }
+        }
+
+  
+}
+
+

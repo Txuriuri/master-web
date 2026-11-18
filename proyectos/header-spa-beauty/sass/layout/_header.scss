@@ -1,0 +1,19 @@
+﻿// Header
+header.header {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  width: 150px;
+}
+
+

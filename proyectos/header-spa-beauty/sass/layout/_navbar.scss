@@ -1,0 +1,47 @@
+﻿
+
+nav.nav-principal  {
+    ul {
+        @include reset-list();
+        display: flex;
+        align-items: center;
+        gap: 60px;
+    }
+    & a {
+        text-decoration: none;
+        color: $dark-blue;
+        font-weight: 500;
+        & .chevron {
+            display: flex;
+            align-items: center;
+        }
+       
+        
+    } 
+
+}
+
+div.login {
+    li:nth-child(3) {
+        margin-left: 40px;
+    }
+    ul {
+        @include reset-list();
+        display: flex;
+        align-items: center;
+        gap: 40px;   
+    }
+    & a {
+        color: $dark-blue;
+        font-weight: 500;
+        font-size: 18px;
+       
+        
+        
+       
+    }
+    &  a.button {
+            @include button();
+        }
+}
+
