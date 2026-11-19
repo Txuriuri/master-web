@@ -31,29 +31,17 @@ h1, h2, h3, h4, h5, h6 {
   padding-right: 20px;
 }
 
-header {
+header.header-principal {
   padding-top: 20px;
   padding-bottom: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
-nav.nav-primary ul {
+nav.nav-principal ul {
   padding: 0;
   margin: 0;
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 30px;
-}
-nav.nav-primary ul a {
-  color: #737373;
-  text-decoration: none;
-  font-weight: 400;
-}
-nav.nav-primary ul a.active, nav.nav-primary ul a:hover {
-  color: #F25C05;
 }
 
 .btn {
@@ -70,20 +58,6 @@ nav.nav-primary ul a.active, nav.nav-primary ul a:hover {
 }
 .btn:hover {
   opacity: 0.9;
-}
-
-.cart {
-  position: relative;
-  display: inline-block;
-}
-.cart-badge {
-  position: absolute;
-  top: -5px;
-  right: -5px;
-  width: 8px;
-  height: 8px;
-  background-color: #F25C05;
-  border-radius: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */

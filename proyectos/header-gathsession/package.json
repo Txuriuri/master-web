@@ -1,10 +1,10 @@
 ﻿{
-  "name": "plantilla-base-sass",
-  "version": "1.0.0",
-  "description": "Plantilla base con arquitectura Sass 7-1 lista para nuevos proyectos.",
-  "private": true,
-  "scripts": {
-    "sass:build": "sass sass/style.scss style.css",
-    "sass:watch": "sass --watch sass/style.scss style.css"
-  }
+    "name":  "header-gathsession",
+    "version":  "1.0.0",
+    "description":  "Header del diseno Gathsession (ejercicio CSS).",
+    "private":  true,
+    "scripts":  {
+                    "sass:build":  "sass sass/style.scss style.css",
+                    "sass:watch":  "sass --watch sass/style.scss style.css"
+                }
 }
