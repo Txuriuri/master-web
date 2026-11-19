@@ -8,12 +8,26 @@ nav.nav-principal  {
         gap: 60px;
     }
     & a {
-        text-decoration: none;
+        text-decoration: underline 2px transparent;
+        text-underline-offset: 6px;
         color: $dark-blue;
         font-weight: 500;
-        & .chevron {
+        transition: text-decoration-color 0.25s ease;
+        &:hover {
+            text-decoration-color: $mint;
+        }
+
+        &.chevron {
             display: flex;
             align-items: center;
+            & img {
+                transition: transform 0.25s ease;
+            }
+
+            &:hover img {
+                transform: rotate(180deg);
+            }
+            
         }
        
         
@@ -34,12 +48,27 @@ div.login {
     & a {
         color: $dark-blue;
         font-weight: 500;
-        font-size: 18px;
-       
-        
-        
-       
+        font-size: 18px;  
     }
+    & a:not(.button) {
+        text-decoration: underline 2px transparent;
+        text-underline-offset: 6px;
+        transition: text-decoration-color 0.25s ease;
+
+        &:hover {
+            text-decoration-color: $dark-blue;
+        }
+    }
+
+    & a.buscar,
+    & a.cart {
+        transition: opacity 0.25s ease;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
     &  a.button {
             @include button();
         }

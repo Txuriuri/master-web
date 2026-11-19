@@ -52,6 +52,10 @@ header.header {
   display: flex;
   align-items: center;
   width: 150px;
+  transition: opacity 0.25s ease;
+}
+.header__logo:hover {
+  opacity: 0.7;
 }
 
 nav.nav-principal ul {
@@ -63,13 +67,25 @@ nav.nav-principal ul {
   gap: 60px;
 }
 nav.nav-principal a {
-  text-decoration: none;
+  -webkit-text-decoration: underline 2px transparent;
+          text-decoration: underline 2px transparent;
+  text-underline-offset: 6px;
   color: #263F64;
   font-weight: 500;
+  transition: text-decoration-color 0.25s ease;
 }
-nav.nav-principal a .chevron {
+nav.nav-principal a:hover {
+  text-decoration-color: #A8D6CA;
+}
+nav.nav-principal a.chevron {
   display: flex;
   align-items: center;
+}
+nav.nav-principal a.chevron img {
+  transition: transform 0.25s ease;
+}
+nav.nav-principal a.chevron:hover img {
+  transform: rotate(180deg);
 }
 
 div.login li:nth-child(3) {
@@ -88,6 +104,21 @@ div.login a {
   font-weight: 500;
   font-size: 18px;
 }
+div.login a:not(.button) {
+  -webkit-text-decoration: underline 2px transparent;
+          text-decoration: underline 2px transparent;
+  text-underline-offset: 6px;
+  transition: text-decoration-color 0.25s ease;
+}
+div.login a:not(.button):hover {
+  text-decoration-color: #263F64;
+}
+div.login a.buscar, div.login a.cart {
+  transition: opacity 0.25s ease;
+}
+div.login a.buscar:hover, div.login a.cart:hover {
+  opacity: 0.7;
+}
 div.login a.button {
   display: inline-block;
   background-color: #263F64;
@@ -97,9 +128,10 @@ div.login a.button {
   font-weight: 500;
   text-decoration: none;
   border: none;
+  transition: background-color 0.25s ease;
 }
 div.login a.button:hover {
-  opacity: 0.8;
+  background-color: #1E3252;
 }
 
 .button {
@@ -111,9 +143,10 @@ div.login a.button:hover {
   font-weight: 500;
   text-decoration: none;
   border: none;
+  transition: background-color 0.25s ease;
 }
 .button:hover {
-  opacity: 0.8;
+  background-color: #1E3252;
 }
 
 .btn-video {
@@ -132,6 +165,11 @@ div.login a.button:hover {
   background-color: white;
   border-radius: 50%;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.btn-video:hover .btn-video__play {
+  transform: scale(1.08);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
 }
 
 .hero {

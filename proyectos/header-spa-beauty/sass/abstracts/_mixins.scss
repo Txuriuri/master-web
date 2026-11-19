@@ -23,9 +23,10 @@
   font-weight: 500;
   text-decoration: none;
   border: none;
+  transition: background-color 0.25s ease;
   
 
   &:hover {
-    opacity: 0.8;
+    background-color: $dark-blue-dark;
   }
 }
