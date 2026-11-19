@@ -1,0 +1,30 @@
+﻿// ==========================================
+// Punto de entrada Sass (Arquitectura 7-1)
+// ==========================================
+
+// 1. Abstracts (Variables, funciones, mixins y placeholders)
+@import "abstracts/variables";
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/placeholders";
+
+// 2. Vendors (Fuentes y librerias externas)
+@import "vendors/vendors";
+
+// 3. Base (Reset y tipografia)
+@import "base/reset";
+@import "base/typography";
+
+// 4. Layout (Estructura general)
+@import "layout/container";
+@import "layout/header";
+@import "layout/navbar";
+
+// 5. Components (Componentes reutilizables)
+@import "components/components";
+
+// 6. Pages (Estilos especificos de paginas)
+@import "pages/home";
+
+// 7. Themes (Temas de color o variantes)
+@import "themes/default";
