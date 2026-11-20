@@ -1,0 +1,13 @@
+
+
+.hero__feature-item {
+    position: absolute;
+    width: 240px;
+    &--morada   { left: 816px;  top: 174px; height: 509px; background-color: #6E1FED; }
+    &--turquesa { left: 1088px; top: 174px; height: 240px; background-color: #60D3D9; }
+    &--amarilla { left: 1360px; top: 310px; height: 509px; background-color: #F4B840; }
+    &--naranja  { left: 1088px; top: 446px; height: 509px; background-color: #FF7E29; }
+    &--rosa     { left: 816px;  top: 715px; height: 240px; background-color: #DB2A6B; }
+    
+
+}
