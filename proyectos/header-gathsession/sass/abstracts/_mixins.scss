@@ -10,14 +10,14 @@
 
 @mixin button() {
   display: inline-block;
-  background-color: $primary;
+  background-color: $pink;
   color: white;
-  padding: 12px 24px;
-  border-radius: 12px;
+  
+  
   font-weight: 500;
   text-decoration: none;
   border: none;
-  cursor: pointer;
+  
   transition: opacity 0.2s ease;
 
   &:hover {

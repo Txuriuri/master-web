@@ -1,4 +1,69 @@
+.hero__content {
+    & h1 {
+        color: white;
+        font-weight: 700;
+        font-size: 80px;
+        font-family: "Merriweather", serif;
+        line-height: 1.26;
+        max-width: 770px;
 
+
+    }
+    & > p {
+        max-width: 655px;
+        line-height: 40px;
+        font-family: $main-font;
+        font-size: 24px;
+        color: $paragraph;
+        margin-top: 22px;
+        font-weight: 400;
+
+
+    }
+
+    & .hero__actions {
+        display: flex;
+        align-items: center;
+        gap: 33px;
+        margin-top: 32px;
+        margin-bottom: 144px;
+     
+           
+    }
+
+  
+
+        
+    
+    & .hero__features {
+            display: flex;
+            gap: 50px;
+
+        }
+
+     .icon {
+        display: flex;
+        align-items: center;
+        gap: 17px;
+        &__box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 64px;
+            height: 64px;
+            background-color: #464751;
+            border-radius: 16px;
+        }
+        & > p {
+            font-size: 17px;
+            line-height: 24px;
+            font-weight: 600;
+            color: white;
+        }
+    
+
+    }
+}
 
 .hero__feature-item {
     position: absolute;
@@ -8,6 +73,6 @@
     &--amarilla { left: 1360px; top: 310px; height: 509px; background-color: #F4B840; }
     &--naranja  { left: 1088px; top: 446px; height: 509px; background-color: #FF7E29; }
     &--rosa     { left: 816px;  top: 715px; height: 240px; background-color: #DB2A6B; }
-    
+    border-radius: 90px;
 
 }

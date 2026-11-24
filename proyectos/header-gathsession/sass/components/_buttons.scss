@@ -1,4 +1,26 @@
 ﻿// Botones
-.btn {
+.button {
   @include button();
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 240px;
+  height: 60px;
+  border-radius: 16px 16px 16px 0;
+  font-size: 18px;
+}
+
+.button-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: underline;
+  transition: 0.2s ease;
+
+  &:hover {
+    opacity: 0.9;
+  }
 }

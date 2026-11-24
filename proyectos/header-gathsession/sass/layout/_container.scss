@@ -3,8 +3,30 @@
   max-width: $max-width-container;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
   
   position: relative;
+
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    border: 1px solid #3C3D47;
+    border-radius: 50%;
+    z-index: -1;
+
+  }
+  &::before {
+    left: 811px;
+    top: 263px;
+    width: 1100px;
+    height: 1100px;
+  }
+
+  &::after {
+    left: 1056px;
+    top: 539px;
+    width: 850px;
+    height: 850px;
+  }
 }
